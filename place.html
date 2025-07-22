@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Georgia - Beautiful Land of Mountains and Wine</title>
+    <meta name="description"
+        content="Discover Georgia - a country rich in culture, stunning landscapes, ancient wine traditions, and warm hospitality in the heart of the Caucasus.">
+    <meta name="author" content="Kuklin, Aleksandr">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="place-title">Georgia</h1>
+    </header>
+
+    <!-- Hero Image with responsive srcset -->
+    <picture>
+        <source media="(min-width: 768px)" srcset="images/photo.webp">
+        <img class="hero-image" src="images/photo.webp" alt="Beautiful landscape" width="800" height="400">
+    </picture>
+
+    <main>
+        <div class="content-grid">
+            <section class="card">
+                <h2>Data</h2>
+                <div class="data-item">
+                    <span class="data-label">Area:</span>
+                    <span class="data-value">69,700 sq km</span>
+                </div>
+                <div class="data-item">
+                    <span class="data-label">Population:</span>
+                    <span class="data-value">3,729,500</span>
+                </div>
+                <div class="data-item">
+                    <span class="data-label">Capital:</span>
+                    <span class="data-value">Tbilisi</span>
+                </div>
+                <div class="data-item">
+                    <span class="data-label">Languages:</span>
+                    <span class="data-value">Georgian</span>
+                </div>
+                <div class="data-item">
+                    <span class="data-label">Currency:</span>
+                    <span class="data-value">Georgian Lari (GEL)</span>
+                </div>
+                <div class="data-item">
+                    <span class="data-label">Time Zone:</span>
+                    <span class="data-value">GMT+4</span>
+                </div>
+                <div class="data-item">
+                    <span class="data-label">Calling Code:</span>
+                    <span class="data-value">+995</span>
+                </div>
+                <div class="data-item">
+                    <span class="data-label">Internet TLD:</span>
+                    <span class="data-value">.ge</span>
+                </div>
+            </section>
+
+            <section class="card weather-section">
+                <h2>Weather</h2>
+                <svg class="weather-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Partly cloudy SVG icon -->
+                    <circle cx="35" cy="35" r="20" fill="#FFD700" stroke="#FFA500" stroke-width="2" />
+                    <path
+                        d="M20 60 Q15 55 25 55 Q30 50 40 55 Q50 50 60 55 Q70 50 75 55 Q80 60 75 65 Q70 70 60 65 Q50 70 40 65 Q30 70 25 65 Q15 70 20 60"
+                        fill="#E6E6E6" stroke="#CCCCCC" stroke-width="1" />
+                </svg>
+                <div class="weather-details">
+                    <div class="weather-item">
+                        <strong>Temperature:</strong> 8°C
+                    </div>
+                    <div class="weather-item">
+                        <strong>Conditions:</strong> Partly Cloudy
+                    </div>
+                    <div class="weather-item">
+                        <strong>Wind:</strong> <span id="wind-speed">15</span> km/h
+                    </div>
+                    <div class="weather-item">
+                        <strong>Wind Chill:</strong> <span id="wind-chill" class="wind-chill">N/A</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🏔️ Kuklin Aleksandr 🏔️ Georgia</p>
+        <p id="lastModified">Last Modification: </p>
+    </footer>
+
+
+</body>
+
+</html>
