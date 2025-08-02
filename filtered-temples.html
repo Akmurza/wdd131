@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Temple Album - WDD 131</title>
+    <meta name="description"
+        content="Temple Album showcasing beautiful LDS temples from around the world with filtering options">
+    <meta name="author" content="Kuklin Aleksandr">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/large-filtered-temples.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">Temple Album</div>
+            <button class="hamburger">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="#" data-filter="home" class="active">Home</a></li>
+                    <li><a href="#" data-filter="old">Old</a></li>
+                    <li><a href="#" data-filter="new">New</a></li>
+                    <li><a href="#" data-filter="large">Large</a></li>
+                    <li><a href="#" data-filter="small">Small</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>Temple</h1>
+        <h2 id="page-title">Sacred Temples:</h2>
+        <div class="temple-grid" id="temple-grid">
+            <!-- Temple cards will be dynamically generated here -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Kuklin Aleksandr - Georgia</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/filtered-temples.js"></script>
+</body>
+
+</html>

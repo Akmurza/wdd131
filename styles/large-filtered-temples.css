@@ -1,0 +1,55 @@
+
+@media (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+
+    nav {
+        position: static;
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+        background: none;
+        box-shadow: none;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 2rem;
+        padding: 0;
+    }
+
+    nav a {
+        padding: 0.5rem 1rem;
+        border-radius: 25px;
+        border-left: none;
+        transition: all 0.3s ease;
+    }
+
+    nav a:hover,
+    nav a.active {
+        background: linear-gradient(135deg, #3498db, #2980b9);
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .temple-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+
+    .temple-card img {
+        height: 300px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
