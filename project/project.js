@@ -201,7 +201,7 @@ function filterGames() {
             } else if (playersValue === '3-4') {
                 playersMatch = game.players.includes('3') || game.players.includes('4');
             } else if (playersValue === '5+') {
-                playersMatch = game.players.includes('5')  game.players.includes('6')  game.players.includes('7');
+                playersMatch = game.players.includes('5') || game.players.includes('6') || game.players.includes('7');
             }
         }
 
@@ -215,7 +215,7 @@ function getRandomGame() {
     const randomIndex = Math.floor(Math.random() * games.length);
     const randomGame = games[randomIndex];
 
-    alert(🎲 Random Game Suggestion: ${ randomGame.name }\n\n${ randomGame.description }\n\nPlayers: ${ randomGame.players }\nAge: ${ randomGame.age }\nDuration: ${ randomGame.duration });
+    alert(`🎲 Random Game Suggestion: ${randomGame.name}\n\n${randomGame.description}\n\nPlayers: ${randomGame.players}\nAge: ${randomGame.age}\nDuration: ${randomGame.duration}`);
 }
 
 function toggleFavorite(event) {
@@ -285,7 +285,7 @@ function handleBookingSubmission(event) {
     };
 
     // Conditional branching for form validation
-    if (!bookingData.name!bookingData.email!bookingData.date!bookingData.time!bookingData.players) {
+    if (!bookingData.name || !bookingData.email || !bookingData.date || !bookingData.time || !bookingData.players) {
         alert('Please fill in all required fields!');
         return;
     }
@@ -297,7 +297,7 @@ function handleBookingSubmission(event) {
     localStorage.setItem('skyboard-bookings', JSON.stringify(bookings));
 
     // Success message using template literal
-    const successMessage = Thank you ${ bookingData.name }!Your table booking for ${ bookingData.date } at ${ bookingData.time } has been submitted.We'll contact you at ${bookingData.email} to confirm.;
+    const successMessage = `Thank you ${bookingData.name}!Your table booking for ${bookingData.date} at ${bookingData.time} has been submitted.We'll contact you at ${bookingData.email} to confirm.`;
 
     alert(successMessage);
     bookingForm.reset();
@@ -384,7 +384,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 e.preventDefault();
                 smoothScrollTo(this.getAttribute('href'));
 
-                Abc, [10.08.2025 18: 30]
+
             }
         });
     });
@@ -424,8 +424,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Console log for testing purposes
-    console.log(SkyBoard loaded with ${ gameStats.totalGames } games!);
-console.log('Top rated games:', gameStats.getTopRatedGames());
+    console.log(`SkyBoard loaded with ${gameStats.totalGames} games!`);
+    console.log('Top rated games:', gameStats.getTopRatedGames());
 });
 
 // Intersection Observer for animations (bonus feature)
