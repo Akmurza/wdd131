@@ -8,7 +8,7 @@
     // Function to format rating as stars
     function formatRating(rating) {
     const stars = '★'.repeat(parseInt(rating)) + '☆'.repeat(5 - parseInt(rating));
-    return <span class="rating-stars">${stars}</span> (${rating}/5);
+    return `<span class="rating-stars">${stars}</span> (${rating}/5)`;
 }
 
     // Function to format features list
@@ -43,7 +43,7 @@
     document.getElementById('reviewCounter').textContent = reviewCount;
 }
 
-    ., [02.08.2025 20: 20]
+
     // Function to populate review details
     function populateReviewDetails() {
     const reviewDetails = document.getElementById('reviewDetails');
