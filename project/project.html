@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="SkyBoard - Board game center in Tbilisi. Play, book tables, join tournaments and discover new games.">
+    <title>SkyBoard - Board Game Center</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>🎲 SkyBoard</h1>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#games" class="nav-link">Games</a></li>
+                    <li><a href="#booking" class="nav-link">Book Table</a></li>
+                    <li><a href="#events" class="nav-link">Events</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Welcome to SkyBoard</h2>
+                <p>Discover amazing board games in the heart of Tbilisi</p>
+                <button class="cta-button" id="hero-cta">Explore Games</button>
+            </div>
+            <div class="hero-image">
+                <img src="https://via.placeholder.com/600x400/3498db/ffffff?text=Board+Games" alt="Board games setup"
+                    loading="lazy">
+            </div>
+        </section>
+
+        <section id="games" class="games-section">
+            <div class="container">
+                <h2>Our Games Collection</h2>
+
+                <div class="game-filters">
+                    <h3>Find Your Perfect Game</h3>
+                    <div class="filter-container">
+                        <select id="age-filter">
+                            <option value="">All Ages</option>
+                            <option value="6+">6+ Years</option>
+                            <option value="8+">8+ Years</option>
+                            <option value="12+">12+ Years</option>
+                            <option value="14+">14+ Years</option>
+                        </select>
+
+                        <select id="players-filter">
+                            <option value="">Any Players</option>
+                            <option value="2">2 Players</option>
+                            <option value="3-4">3-4 Players</option>
+                            <option value="5+">5+ Players</option>
+                        </select>
+
+                        <button id="random-game">🎲 Random Game</button>
+                    </div>
+                </div>
+
+                <div class="games-grid" id="games-grid">
+                    <!-- Games will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="booking" class="booking-section">
+            <div class="container">
+                <h2>Book Your Table</h2>
+                <form class="booking-form" id="booking-form">
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Date *</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="time">Time *</label>
+                            <select id="time" name="time" required>
+                                <option value="">Select Time</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="16:00">4:00 PM</option>
+                                <option value="18:00">6:00 PM</option>
+                                <option value="20:00">8:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="players">Number of Players *</label>
+                        <select id="players" name="players" required>
+                            <option value="">Select</option>
+                            <option value="2">2 players</option>
+                            <option value="3">3 players</option>
+                            <option value="4">4 players</option>
+                            <option value="5">5 players</option>
+                            <option value="6+">6+ players</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Special Requests</label>
+                        <textarea id="message" name="message" rows="3"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Book Table</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="events" class="events-section">
+            <div class="container">
+                <h2>Upcoming Events</h2>
+                <div class="events-grid" id="events-grid">
+                    <!-- Events will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About SkyBoard</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Welcome to SkyBoard, Tbilisi's premier board game center! We're passionate about bringing
+                            people together through the joy of gaming.</p>
+                        <p>Whether you're a seasoned strategist or new to board games, our welcoming space offers
+                            something for everyone. Join our growing community and discover your next favorite game!</p>
+
+                        <div class="features">
+                            <h3>Why Choose SkyBoard?</h3>
+                            <ul>
+                                <li>Large collection of modern board games</li>
+                                <li>Family-friendly atmosphere</li>
+                                <li>Regular tournaments and events</li>
+                                <li>Expert game recommendations</li>
+                                <li>Comfortable gaming spaces</li>
+                            </ul>
+
+
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://via.placeholder.com/500x400/e74c3c/ffffff?text=Gaming+Space"
+                            alt="SkyBoard gaming area" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SkyBoard</h3>
+                    <p>Your premier board game destination in Tbilisi</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#games">Games</a></li>
+                        <li><a href="#booking">Book Table</a></li>
+                        <li><a href="#events">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📍 300 Aragveli Avenue, Tbilisi</p>
+                    <p>📞 +995 555 123 456</p>
+                    <p>✉️ hello@skyboard.ge</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SkyBoard. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="project.js"></script>
+</body>
+
+</html>
