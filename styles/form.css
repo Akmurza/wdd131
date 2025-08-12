@@ -149,9 +149,7 @@ textarea {
     box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
 }
 
-.submit-btn:active {
-    transform: translateY(0);
-}
+
 
 .required {
     color: #e53e3e;
