@@ -4,6 +4,7 @@
     --accent-gold: #ffd700;
     --text-dark: #2c3e50;
     --text-light: #555;
+    --text-black: #000;
     --bg-gradient: linear-gradient(135deg, #ff0800 0%, #ffffff 50%, #ff0800 100%);
     --shadow-light: 0 10px 30px rgba(0, 0, 0, 0.1);
     --shadow-heavy: 0 20px 40px rgba(0, 0, 0, 0.15);
@@ -38,7 +39,7 @@ header {
     text-align: center;
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(black);
+    color: var(--text-black);
     padding: 1.5rem 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -132,11 +133,11 @@ main {
 
 .data-label {
     font-weight: 500;
-    color: var(black);
+    color: var(--text-black);
 }
 
 .data-value {
-    color: var(black);
+    color: var(--text-black);
 }
 
 .weather-section h2 {
@@ -161,7 +162,7 @@ main {
 
 .wind-chill {
     font-weight: 600;
-    color: var(black);
+    color: var(--text-black);
     font-size: 1.2rem;
 }
 
